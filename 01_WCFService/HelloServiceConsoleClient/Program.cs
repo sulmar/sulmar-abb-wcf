@@ -1,6 +1,7 @@
 ﻿using IServices;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
@@ -16,9 +17,11 @@ namespace HelloServiceConsoleClient
             // await AutoProxyTest();
 
             // Proxy class with using ClientBase<IService>
-             //  await ProxyTest();
+            //  await ProxyTest();
 
-            await ChannelFactoryTest();
+           // await ChannelFactoryTest();
+
+            await ChannelFactoryConfigureFromCodeTest();
 
             Console.ReadLine();
 
@@ -30,6 +33,25 @@ namespace HelloServiceConsoleClient
             string endpointConfigurationName = "BasicHttpBinding_IServiceAsync";
 
             ChannelFactory<IServiceAsync> proxy = new ChannelFactory<IServiceAsync>(endpointConfigurationName);
+
+            IServiceAsync helloService = proxy.CreateChannel();
+
+            await helloService.SendAsync("Hello World!");
+
+            string result = await helloService.PingAsync("Hello again!");
+
+            Console.WriteLine(result);
+
+        }
+
+        private static async Task ChannelFactoryConfigureFromCodeTest()
+        {            
+            Uri uri = new Uri(ConfigurationManager.AppSettings["HelloServiceUrl"]);
+
+            BasicHttpBinding binding = new BasicHttpBinding();
+            EndpointAddress endpoint = new EndpointAddress(uri);
+
+            ChannelFactory<IServiceAsync> proxy = new ChannelFactory<IServiceAsync>(binding, endpoint);
 
             IServiceAsync helloService = proxy.CreateChannel();
 
