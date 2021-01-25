@@ -20,9 +20,19 @@ namespace FakeHelloServices
             return $"Hello {message}";
         }
 
+        public Task<string> PingAsync(string message)
+        {
+            return Task.Run(() => Ping(message));
+        }
+
         public void Send(string content)
         {
             Trace.WriteLine(content);
+        }
+
+        public Task SendAsync(string content)
+        {
+            return Task.Run(() => Send(content));
         }
     }
 }

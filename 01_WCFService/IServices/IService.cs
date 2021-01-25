@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace IServices
 {
@@ -12,9 +11,9 @@ namespace IServices
     {
         [OperationContract]
         string Ping(string message);
-
+     
         [OperationContract]
-        void Send(string content);
+        void Send(string content);      
 
         decimal Calculate(decimal amount);
     }
