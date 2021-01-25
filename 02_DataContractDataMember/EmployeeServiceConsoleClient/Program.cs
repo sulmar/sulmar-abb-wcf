@@ -38,10 +38,6 @@ namespace EmployeeServiceConsoleClient
 
             Console.WriteLine($"{anotherEmployee.Id} {anotherEmployee.FirstName} {anotherEmployee.LastName}");
 
-           
-
-          
-
         }
     }
 }
