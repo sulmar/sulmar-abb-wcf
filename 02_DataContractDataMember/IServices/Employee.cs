@@ -13,7 +13,7 @@ namespace IServices
 
     [KnownType(typeof(FullTimeEmployee))]
     [KnownType(typeof(PartTimeEmployee))]
-    [DataContract(Namespace = "http://abb.com/2021/01/25/Employee")]
+    [DataContract(Namespace = "http://abb.com/2021/01/25/Employee", IsReference = true)]
     public class Employee
     {
         [DataMember(Name = "EmployeeId", Order = 4)]
