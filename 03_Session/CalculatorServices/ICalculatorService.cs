@@ -12,5 +12,9 @@ namespace CalculatorServices
     {
         [OperationContract]
         int Add(int x, int y);
+
+        [OperationContract]
+        [FaultContract(typeof(DivideByZeroFault))]
+        int Divide(int x, int y);
     }
 }
