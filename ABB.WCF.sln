@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABB.WCF.SerializationConsoleClient", "ABB.WCF.SerializationConsoleClient\ABB.WCF.SerializationConsoleClient.csproj", "{969609F0-A096-43DB-B6F6-7CBF89502A45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABB.WCF.SerializationConsoleClient", "00_Serialization\ABB.WCF.SerializationConsoleClient\ABB.WCF.SerializationConsoleClient.csproj", "{969609F0-A096-43DB-B6F6-7CBF89502A45}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_WCFService", "01_WCFService", "{C47065B3-52C6-4D99-9545-E3D34B294A0C}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeSeviceHost", "02_DataContractDataMember\EmployeeSeviceHost\EmployeeSeviceHost.csproj", "{A94F91E4-09F1-4F69-BD28-10BB1DDEA138}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeServiceConsoleClient", "02_DataContractDataMember\EmployeeServiceConsoleClient\EmployeeServiceConsoleClient.csproj", "{0BE2D641-79CE-4B1C-9B63-51FAB118F4DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_Serialization", "00_Serialization", "{0E10BDF1-CBFB-4857-8F94-CA5A607F12C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +74,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{969609F0-A096-43DB-B6F6-7CBF89502A45} = {0E10BDF1-CBFB-4857-8F94-CA5A607F12C8}
 		{2E2F1375-F5B5-42D9-AAFB-F5DA85944DE4} = {C47065B3-52C6-4D99-9545-E3D34B294A0C}
 		{D32868D2-8D66-4927-BBB8-D4758BFF26A2} = {C47065B3-52C6-4D99-9545-E3D34B294A0C}
 		{CE129FB8-95E7-46CA-9D7A-B86D6CA504BB} = {C47065B3-52C6-4D99-9545-E3D34B294A0C}
