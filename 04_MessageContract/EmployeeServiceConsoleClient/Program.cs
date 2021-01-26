@@ -1,25 +1,17 @@
-﻿using System;
+﻿using EmployeesService;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
-using IServices;
 
 namespace EmployeeServiceConsoleClient
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            GetEmployeeTest();
-
-            Console.WriteLine("Press Enter key to exit.");
-            Console.ReadLine();
-        }
-
-        private static void GetEmployeeTest()
         {
             Uri uri = new Uri(ConfigurationManager.AppSettings["EmployeeServiceUrl"]);
 
@@ -30,14 +22,15 @@ namespace EmployeeServiceConsoleClient
 
             IEmployeeService employeeService = proxy.CreateChannel();
 
-            Employee employee = new Employee { Id = 2, FirstName = "Bartek", LastName = string.Empty };
+            EmployeeRequest request = new EmployeeRequest { EmployeeId = 1, LicenseKey = "AVBRR44D4" };
+            
+            EmployeeResponse response = employeeService.Get(request);
+            
+            employeeService.Add(request);
 
-            employeeService.Add(employee);
+            Console.WriteLine($"{response.Id} {response.FirstName} {response.LastName}");
 
-            Employee anotherEmployee = employeeService.Get(1);
-
-            Console.WriteLine($"{anotherEmployee.Id} {anotherEmployee.FirstName} {anotherEmployee.LastName}");
-
+            Console.ReadLine();
         }
     }
 }
