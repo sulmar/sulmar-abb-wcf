@@ -5,13 +5,13 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeServiceHost
+namespace ChatServiceSelfHost
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using (ServiceHost host = new ServiceHost(typeof(EmployeesService.EmployeeService)))
+            using (ServiceHost host = new ServiceHost(typeof(ChatServices.ChatService)))
             {
                 host.Open();
 
@@ -27,6 +27,4 @@ namespace EmployeeServiceHost
             }
         }
     }
-
-    
 }
