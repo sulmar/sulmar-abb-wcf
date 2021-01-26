@@ -2,7 +2,7 @@
 
 namespace CalculatorServices
 {
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class CalculatorService : ICalculatorService
     {
         private int _counter = 0;

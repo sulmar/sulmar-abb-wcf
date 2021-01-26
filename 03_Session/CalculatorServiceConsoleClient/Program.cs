@@ -20,7 +20,7 @@ namespace CalculatorServiceConsoleClient
 
             ChannelFactory<ICalculatorService> proxy = new ChannelFactory<ICalculatorService>(binding, endpoint);
 
-            ICalculatorService calculatorService = new CalculatorService();
+            ICalculatorService calculatorService = proxy.CreateChannel();
 
             calculatorService.Add(1, 2);
             calculatorService.Add(6, 4);
