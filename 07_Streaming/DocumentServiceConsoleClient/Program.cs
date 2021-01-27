@@ -32,7 +32,12 @@ namespace DocumentServiceConsoleClient
                 stream.CopyTo(fileStream);
                                
             } // stream.Dispose();
-            // fileStream.Dispose();
+              // fileStream.Dispose();
+
+            using (FileStream fileStream = File.OpenRead(filepath))
+            {
+                client.AddLargeDocument(fileStream);
+            }
         }
     }
 }

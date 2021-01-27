@@ -23,7 +23,6 @@ namespace DocumentServices
         [OperationContract]
         void AddLargeDocument(Stream stream);
 
-
         [OperationContract]
         byte[] GetBytesDocument();
     }
@@ -33,7 +32,11 @@ namespace DocumentServices
     {
         public void AddLargeDocument(Stream stream)
         {
-            throw new NotImplementedException();
+            using (stream)
+            using (FileStream fileStream = File.Create("uploaded.jpg"))
+            {
+                stream.CopyTo(fileStream);
+            }
         }
 
         public byte[] GetBytesDocument()
