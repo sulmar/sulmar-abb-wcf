@@ -19,7 +19,7 @@ namespace DeviceServiceHost
 
             builder.RegisterType<DeviceService>();
             builder.RegisterType<FakeDeviceRepository>().As<IDeviceRepository>();
-            builder.RegisterType<DeviceFaker>().As<Faker<Device>>();
+            builder.RegisterType<DeviceFaker>().As<Faker<Device>>();            
 
             IContainer container = builder.Build();
 
