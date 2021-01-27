@@ -16,8 +16,13 @@ namespace DocumentServices
         // https://github.com/SebastiaanLubbers/WF_WCF_Samples/blob/master/WCF/Extensibility/Channels/ChunkingChannel/CS/ChunkingChannel/ChunkingBehavior.cs
         Stream GetLargeDocument();
 
+        // MTOM encoding
+        // https://docs.microsoft.com/pl-pl/dotnet/framework/wcf/samples/mtom-encoding
+
+        // TODO: implement AddLargeDocument method on the server-side and client-side
         [OperationContract]
         void AddLargeDocument(Stream stream);
+
 
         [OperationContract]
         byte[] GetBytesDocument();
