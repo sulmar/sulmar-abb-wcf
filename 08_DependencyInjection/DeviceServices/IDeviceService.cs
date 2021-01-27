@@ -99,7 +99,24 @@ namespace DeviceServices
 
         public IEnumerable<Device> Get()
         {
-            return repository.Get();
+            if (OperationContext.Current.IncomingMessageHeaders.FindHeader("secret-key", string.Empty) != -1)
+            {
+                string secretKey = OperationContext.Current.IncomingMessageHeaders.GetHeader<string>("secret-key", string.Empty);
+
+                if (!string.IsNullOrEmpty(secretKey))
+                {
+                    Trace.WriteLine($"Secret-Key {secretKey}");
+
+                    if (secretKey == "12345")
+                    {
+                        return repository.Get();
+                    }
+                }
+            }
+
+            throw new FaultException<string>("Invalid secret-key", new FaultReason("Invalid secret-key"));
+
+
         }
 
         public Device GetById(int id)

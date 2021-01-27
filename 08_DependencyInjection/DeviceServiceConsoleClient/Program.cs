@@ -24,11 +24,19 @@ namespace DeviceServiceConsoleClient
 
             using (OperationContextScope context = new OperationContextScope(((IContextChannel)deviceService)))
             {
-                MessageHeader messageHeader = MessageHeader.CreateHeader("secret-key", string.Empty, "12345");
+                MessageHeader messageHeader = MessageHeader.CreateHeader("secret-key", string.Empty, "123456");
 
                 OperationContext.Current.OutgoingMessageHeaders.Add(messageHeader);
 
-                var devices = deviceService.Get();
+                try
+                {
+                    var devices = deviceService.Get();
+
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
 
                 var incommingHeaders = OperationContext.Current.IncomingMessageHeaders;
             }
