@@ -30,7 +30,7 @@ namespace DocumentServiceConsoleClient
             using (FileStream fileStream = File.Create(filepath))
             {
                 stream.CopyTo(fileStream);
-                               
+
             } // stream.Dispose();
               // fileStream.Dispose();
 
@@ -38,6 +38,23 @@ namespace DocumentServiceConsoleClient
             {
                 client.AddLargeDocument(fileStream);
             }
+
+            using (FileStream fileStream = File.OpenRead(filepath))
+            {
+                Document document = new Document { Author = "Marcin", Description = "Lorem ipsum", Content = fileStream };
+
+                client.Add(document);
+
+                Document existingDocument = client.Get();
+
+                Console.WriteLine($"{document.Author} {document.Description}");
+            }
+
+            // CTRL+K+D
+
+
+
+
         }
     }
 }
