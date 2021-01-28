@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksConsoleClient", "10_Th
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "10_ThreadSynchronization\WpfApp\WpfApp.csproj", "{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreConsoleClient", "10_ThreadSynchronization\SemaphoreConsoleClient\SemaphoreConsoleClient.csproj", "{EA687441-77BC-4E32-952F-63E747FAB378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,10 @@ Global
 		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA687441-77BC-4E32-952F-63E747FAB378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA687441-77BC-4E32-952F-63E747FAB378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA687441-77BC-4E32-952F-63E747FAB378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA687441-77BC-4E32-952F-63E747FAB378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -244,6 +250,7 @@ Global
 		{1383C56A-2ABD-47BE-9DD1-6F8F493B2B96} = {C47065B3-52C6-4D99-9545-E3D34B294A0C}
 		{C4C3BC3F-E3F1-4029-85FE-81FCDF469005} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
+		{EA687441-77BC-4E32-952F-63E747FAB378} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {517A0682-1E5B-41D6-8104-AAB4D31BBFCE}
