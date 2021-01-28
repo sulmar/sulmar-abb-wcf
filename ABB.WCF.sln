@@ -85,6 +85,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "10_ThreadSynchron
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreConsoleClient", "10_ThreadSynchronization\SemaphoreConsoleClient\SemaphoreConsoleClient.csproj", "{EA687441-77BC-4E32-952F-63E747FAB378}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaphor2ConsoleClient", "10_ThreadSynchronization\Semaphor2ConsoleClient\Semaphor2ConsoleClient.csproj", "{1D58EE52-2761-416E-87A0-0F120FA7D905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphorSlimConsoleClient", "10_ThreadSynchronization\SemaphorSlimConsoleClient\SemaphorSlimConsoleClient.csproj", "{21FC27E1-919D-42B2-9280-9ECE166C9C22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +219,14 @@ Global
 		{EA687441-77BC-4E32-952F-63E747FAB378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA687441-77BC-4E32-952F-63E747FAB378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA687441-77BC-4E32-952F-63E747FAB378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D58EE52-2761-416E-87A0-0F120FA7D905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D58EE52-2761-416E-87A0-0F120FA7D905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D58EE52-2761-416E-87A0-0F120FA7D905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D58EE52-2761-416E-87A0-0F120FA7D905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21FC27E1-919D-42B2-9280-9ECE166C9C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FC27E1-919D-42B2-9280-9ECE166C9C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FC27E1-919D-42B2-9280-9ECE166C9C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FC27E1-919D-42B2-9280-9ECE166C9C22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -251,6 +263,8 @@ Global
 		{C4C3BC3F-E3F1-4029-85FE-81FCDF469005} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 		{EA687441-77BC-4E32-952F-63E747FAB378} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
+		{1D58EE52-2761-416E-87A0-0F120FA7D905} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
+		{21FC27E1-919D-42B2-9280-9ECE166C9C22} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {517A0682-1E5B-41D6-8104-AAB4D31BBFCE}

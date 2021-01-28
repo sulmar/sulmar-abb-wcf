@@ -32,7 +32,7 @@ namespace SemaphoreConsoleClient
         {
             var account = new AccountLock(initialBalance: 1000);
 
-            var tasks = new Task[1000];
+            var tasks = new Task[100];
 
             for (int i = 0; i < tasks.Length; i++)
             {
@@ -63,7 +63,7 @@ namespace SemaphoreConsoleClient
         {
             var account = new Account(initialBalance: 1000);
 
-            var tasks = new Task[1000];
+            var tasks = new Task[100];
 
             for (int i = 0; i < tasks.Length; i++)
             {
