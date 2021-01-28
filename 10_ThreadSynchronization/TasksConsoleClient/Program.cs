@@ -27,7 +27,24 @@ namespace TasksConsoleClient
 
             IProgress<int> progress = new Progress<int>(copy => Console.WriteLine($"Printing copy of {copy}"));
 
-            await sender.PrintAsync("Hello", 5, progress);
+
+            Task<int> task1 = sender.PrintAsync("Hello", 5, progress);
+            Task<int> task2 = sender.PrintAsync("World", 3, progress);
+
+            ICollection<Task> tasks = new List<Task>();
+
+            tasks.Add(task1);
+            tasks.Add(task2);
+
+            Task.WaitAll(task1, task2);
+
+            // Task.WaitAll(tasks.ToArray());
+
+            // await Task.WhenAll(task1, task2);
+
+            await Task.WhenAll(tasks);
+
+            await Task.WhenAny(tasks);
 
             Console.WriteLine("Press Enter to exit.");
             Console.ReadLine();
