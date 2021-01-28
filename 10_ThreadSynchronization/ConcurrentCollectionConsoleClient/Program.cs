@@ -38,8 +38,11 @@ namespace ConcurrentCollectionConsoleClient
 
             Console.CancelKeyPress += (s, e) =>
             {
-                collection.CompleteAdding();
-                e.Cancel = true;
+                if (e.SpecialKey == ConsoleSpecialKey.ControlC)
+                {
+                    collection.CompleteAdding();
+                    e.Cancel = true;
+                }
             };
 
             // Producers
