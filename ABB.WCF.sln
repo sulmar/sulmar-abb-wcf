@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphorSlimConsoleClient",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentCollectionConsoleClient", "10_ThreadSynchronization\ConcurrentCollectionConsoleClient\ConcurrentCollectionConsoleClient.csproj", "{9EFFE6D5-6BAE-46F7-9378-2F36B161A1F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveConsoleClient", "10_ThreadSynchronization\ReactiveConsoleClient\ReactiveConsoleClient.csproj", "{AB956D35-0D30-4DB1-8464-8CD2F8B77538}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,10 @@ Global
 		{9EFFE6D5-6BAE-46F7-9378-2F36B161A1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EFFE6D5-6BAE-46F7-9378-2F36B161A1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EFFE6D5-6BAE-46F7-9378-2F36B161A1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB956D35-0D30-4DB1-8464-8CD2F8B77538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB956D35-0D30-4DB1-8464-8CD2F8B77538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB956D35-0D30-4DB1-8464-8CD2F8B77538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB956D35-0D30-4DB1-8464-8CD2F8B77538}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -272,6 +278,7 @@ Global
 		{1D58EE52-2761-416E-87A0-0F120FA7D905} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 		{21FC27E1-919D-42B2-9280-9ECE166C9C22} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 		{9EFFE6D5-6BAE-46F7-9378-2F36B161A1F7} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
+		{AB956D35-0D30-4DB1-8464-8CD2F8B77538} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {517A0682-1E5B-41D6-8104-AAB4D31BBFCE}

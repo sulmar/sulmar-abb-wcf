@@ -19,7 +19,7 @@ namespace ConcurrentCollectionConsoleClient
             // QueueProblem();
 
             BlockingCollectionSolution();
-
+            
             Console.WriteLine("Press Enter to exit.");
             Console.ReadLine();
 
