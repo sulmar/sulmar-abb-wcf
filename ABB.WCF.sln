@@ -75,7 +75,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceServices", "08_Depend
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceServiceConsoleClient", "08_DependencyInjection\DeviceServiceConsoleClient\DeviceServiceConsoleClient.csproj", "{41B9E5FB-BBB3-4876-8843-BC418EBDD343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceDotnetCoreConsoleClient", "HelloServiceDotnetCoreConsoleClient\HelloServiceDotnetCoreConsoleClient.csproj", "{1383C56A-2ABD-47BE-9DD1-6F8F493B2B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloServiceDotnetCoreConsoleClient", "HelloServiceDotnetCoreConsoleClient\HelloServiceDotnetCoreConsoleClient.csproj", "{1383C56A-2ABD-47BE-9DD1-6F8F493B2B96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10_ThreadSynchronization", "10_ThreadSynchronization", "{6D9CF902-380D-4C7D-9D61-AB0128A761D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksConsoleClient", "10_ThreadSynchronization\TasksConsoleClient\TasksConsoleClient.csproj", "{C4C3BC3F-E3F1-4029-85FE-81FCDF469005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "10_ThreadSynchronization\WpfApp\WpfApp.csproj", "{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +201,14 @@ Global
 		{1383C56A-2ABD-47BE-9DD1-6F8F493B2B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1383C56A-2ABD-47BE-9DD1-6F8F493B2B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1383C56A-2ABD-47BE-9DD1-6F8F493B2B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C3BC3F-E3F1-4029-85FE-81FCDF469005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C3BC3F-E3F1-4029-85FE-81FCDF469005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C3BC3F-E3F1-4029-85FE-81FCDF469005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C3BC3F-E3F1-4029-85FE-81FCDF469005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -228,6 +242,8 @@ Global
 		{5779E6BB-49E3-43E3-9D38-F2FB61CFBBF5} = {20419EE5-29FB-4778-A792-390BF58611DA}
 		{41B9E5FB-BBB3-4876-8843-BC418EBDD343} = {20419EE5-29FB-4778-A792-390BF58611DA}
 		{1383C56A-2ABD-47BE-9DD1-6F8F493B2B96} = {C47065B3-52C6-4D99-9545-E3D34B294A0C}
+		{C4C3BC3F-E3F1-4029-85FE-81FCDF469005} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
+		{6C02724B-D6FB-4FE9-909B-CFC8D2AD4184} = {6D9CF902-380D-4C7D-9D61-AB0128A761D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {517A0682-1E5B-41D6-8104-AAB4D31BBFCE}
